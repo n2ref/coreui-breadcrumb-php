@@ -49,14 +49,14 @@ class Breadcrumb {
 
     /**
      * Добавление записи
-     * @param string      $title
+     * @param string      $text
      * @param string|null $url
      * @return self
      */
-    public function addItem(string $title, string $url = null): self {
+    public function addItem(string $text, string $url = null): self {
 
         $item = [
-            'title' => $title,
+            'text' => $text,
         ];
 
         if ($url !== null) {
